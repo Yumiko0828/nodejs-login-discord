@@ -10,9 +10,9 @@ passport.deserializeUser((obj, done) => {
 })
 
 passport.use(new Strategy({
-    clientID: "899711568370102412",
-    clientSecret: "Dtjbwe2PhDeH_VaiFNticAJWenQ-hU8-",
-    callbackURL: "https://localhost:3000/login",
+    clientID: "<CLIENT ID>",
+    clientSecret: "<CLIENT SECRET>",
+    callbackURL: "<URL>",
     scope: ["identify"]
 }, (accesstoken, refreshtoken, profile, cb) => {
     process.nextTick(() => {
