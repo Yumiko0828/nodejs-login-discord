@@ -29,7 +29,7 @@ app.engine('.hbs', hbs({
 app.set('view engine', '.hbs');
 
 // Static Files
-app.set(express.static("public"));
+app.use(express.static("public"));
 
 // Routes
 app.get('/', (req, res) => {
